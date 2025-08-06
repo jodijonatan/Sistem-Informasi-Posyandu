@@ -1,4 +1,4 @@
-package utama;
+package main;
 
 public class Ibu extends Person {
     public void tampilkanInfoIbu() {

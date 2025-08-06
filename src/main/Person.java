@@ -1,4 +1,4 @@
-package utama;
+package main;
 
 public class Person {
     public String nama;

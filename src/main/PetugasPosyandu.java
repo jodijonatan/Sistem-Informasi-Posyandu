@@ -1,4 +1,4 @@
-package utama;
+package main;
 
 public class PetugasPosyandu extends Person {
     public void tampilkanInfoPetugas() {
