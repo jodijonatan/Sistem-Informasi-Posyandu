@@ -7,4 +7,8 @@ public class Ibu extends Person {
         System.out.println("Alamat: " + kota + ", " + negara);
         System.out.println("Tanggal Lahir: " + tanggalLahir);
     }
+
+    public void sapaIbu() {
+        System.out.println("Halo, " + nama + "! Selamat datang di Posyandu!");
+    }
 }

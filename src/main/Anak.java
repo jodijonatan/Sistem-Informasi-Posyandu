@@ -7,4 +7,7 @@ public class Anak extends Person {
         System.out.println("Alamat: " + kota + ", " + negara);
         System.out.println("Tanggal Lahir: " + tanggalLahir);
     }
+    public void sapaAnak() {
+        System.out.println("Halo, " + nama + "! Selamat datang di Posyandu!");
+    }
 }

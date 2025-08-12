@@ -9,6 +9,7 @@ public class Main {
         Diego.kota = "Medan";
         Diego.negara = "Indonesia";
         Diego.tampilkanInfoAnak();
+        Diego.sapaAnak();
 
         System.out.println("\n");
 
@@ -20,6 +21,12 @@ public class Main {
         KesehatanDiego.detakJantung = 999;
         KesehatanDiego.suhuTubuh = 40.9;
         KesehatanDiego.tampilanDataKesehatan();
+        KesehatanDiego.berat_sehat();
+        KesehatanDiego.tinggi_sehat();
+        KesehatanDiego.tekanan_darah_sehat();
+        KesehatanDiego.detak_jantung_sehat();
+        KesehatanDiego.suhuTubuh_sehat();
+        KesehatanDiego.is_sehat();
 
         System.out.println("\n");
 
@@ -30,6 +37,7 @@ public class Main {
         Wati.kota = "Medan";
         Wati.negara = "Indonesia";
         Wati.tampilkanInfoIbu();
+        Wati.sapaIbu();
         
         System.out.println("\n");
         
@@ -40,6 +48,7 @@ public class Main {
         Andre.kota = "Medan";
         Andre.negara = "Indonesia";
         Andre.tampilkanInfoPetugas();
+        Andre.sapaPetugas();
         
         System.out.println("\n");
 
