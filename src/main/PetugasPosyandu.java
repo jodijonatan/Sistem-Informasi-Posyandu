@@ -11,4 +11,14 @@ public class PetugasPosyandu extends Person {
     public void sapaPetugas() {
         System.out.println("Halo, " + nama + "! Selamat datang di Posyandu!");
     }
+
+    public void catatDataAnak(Anak anak, DataKesehatan data) {
+        anak.setKesehatan(data);
+        System.out.println(this.nama + " berhasil mencatat data kesehatan untuk anak bernama " + anak.nama + ".");
+    }
+
+    public void berikanInformasiJadwal(JadwalPosyandu jadwal) {
+        System.out.println(this.nama + " memberikan informasi jadwal:");
+        jadwal.tampilkanJadwal();
+    }
 }

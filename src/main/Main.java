@@ -27,6 +27,15 @@ public class Main {
         KesehatanDiego.detak_jantung_sehat();
         KesehatanDiego.suhuTubuh_sehat();
         KesehatanDiego.is_sehat();
+        
+        System.out.println("\n");
+
+        Diego.setKesehatan(KesehatanDiego);
+        
+        DataKesehatan dataHasil = Diego.getKesehatan();
+
+        System.out.println("Berat Badan " + Diego.nama + ": " + dataHasil.beratBadan + " kg");
+        System.out.println("Tinggi Badan " + Diego.nama + ": " + dataHasil.tinggiBadan + " cm");
 
         System.out.println("\n");
 
@@ -40,6 +49,11 @@ public class Main {
         Wati.sapaIbu();
         
         System.out.println("\n");
+
+        Wati.setAnak(Diego);
+        Wati.tampilkanInfoAnak();
+
+        System.out.println("\n");
         
         PetugasPosyandu Andre = new PetugasPosyandu();
         Andre.nama = "Andre";
@@ -49,15 +63,22 @@ public class Main {
         Andre.negara = "Indonesia";
         Andre.tampilkanInfoPetugas();
         Andre.sapaPetugas();
+
+        Andre.catatDataAnak(Diego, KesehatanDiego);
         
         System.out.println("\n");
 
         JadwalPosyandu JadwalDiego = new JadwalPosyandu();
-        JadwalDiego.namaKegiatan = "Operasi Otak";
-        JadwalDiego.tanggalPelaksanaan = "20 Agustus 2026";
-        JadwalDiego.waktuMulai = "08:00";
-        JadwalDiego.waktuSelesai = "10:00";
-        JadwalDiego.namaLokasi = "Rumah Ibu Wati";
+        JadwalDiego.setInfoJadwal("Operasi Otak", "20 Agustus 2026", "08:00", "10:00", "Rumah Ibu Wati");
         JadwalDiego.tampilkanJadwal();
+
+        System.out.println("\n");
+
+        JadwalDiego.tampilkanWaktuMulai();
+        JadwalDiego.cekStatusJadwal();
+
+        System.out.println("\n");
+
+        Andre.berikanInformasiJadwal(JadwalDiego);
     }
 }

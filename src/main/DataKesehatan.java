@@ -17,7 +17,6 @@ public class DataKesehatan {
         System.out.println("Suhu Tubuh: " + suhuTubuh);
     }
 
-
     public String berat_sehat() {
         if (beratBadan < 18.5) {
             return "Status: Kurang Berat Badan";

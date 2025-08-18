@@ -1,6 +1,8 @@
 package main;
 
 public class Ibu extends Person {
+    private Anak anak;
+
     public void tampilkanInfoIbu() {
         System.out.println("Nama Ibu: " + nama);
         System.out.println("Umur Ibu: " + umur);
@@ -10,5 +12,17 @@ public class Ibu extends Person {
 
     public void sapaIbu() {
         System.out.println("Halo, " + nama + "! Selamat datang di Posyandu!");
+    }
+
+    public void setAnak(Anak anak) {
+        this.anak = anak;
+    }
+
+    public void tampilkanInfoAnak() {
+        if (this.anak != null) {
+            this.anak.tampilkanInfoAnak();
+        } else {
+            System.out.println("Belum ada anak yang terdaftar.");
+        }
     }
 }
