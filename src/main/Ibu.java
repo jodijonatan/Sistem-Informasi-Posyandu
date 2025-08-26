@@ -1,6 +1,11 @@
 package main;
 
-public class Ibu extends Person {
+public class Ibu {
+    public String nama;
+    public Integer umur;
+    public String tanggalLahir;
+    public String kota;
+    public String negara;
     private Anak anak;
 
     public void tampilkanInfoIbu() {
@@ -24,18 +29,5 @@ public class Ibu extends Person {
         } else {
             System.out.println("Belum ada anak yang terdaftar.");
         }
-    }
-}
-
-class IbuHamil extends Ibu {
-    private int usiaKehamilan;
-
-    public void setUsiaKehamilan(int bulan) {
-        this.usiaKehamilan = bulan;
-    }
-
-    public void tampilkanInfoIbuHamil() {
-        tampilkanInfoIbu();
-        System.out.println("Usia Kehamilan: " + this.usiaKehamilan + " bulan");
     }
 }

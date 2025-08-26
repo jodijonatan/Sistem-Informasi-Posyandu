@@ -37,34 +37,5 @@ public class JadwalPosyandu {
     }
 }
 
-class JadwalVaksinasi extends JadwalPosyandu {
-    public String jenisVaksin;
-    public String sasaranUsia;
 
-    public void setInfoVaksin(String jenisVaksin, String sasaranUsia) {
-        this.jenisVaksin = jenisVaksin;
-        this.sasaranUsia = sasaranUsia;
-    }
-    
-    public void tampilkanJadwalVaksinasi() {
-        tampilkanJadwal();
-        System.out.println("Jenis Vaksin: " + jenisVaksin);
-        System.out.println("Sasaran Usia: " + sasaranUsia);
-    }
-}
 
-class JadwalPemeriksaanIbuHamil extends JadwalPosyandu {
-    public String namaBidan;
-    public String jenisPemeriksaan;
-
-    public void setInfoPemeriksaan(String namaBidan, String jenisPemeriksaan) {
-        this.namaBidan = namaBidan;
-        this.jenisPemeriksaan = jenisPemeriksaan;
-    }
-
-    public void tampilkanJadwalPemeriksaan() {
-        tampilkanJadwal();
-        System.out.println("Bidan yang bertugas: " + namaBidan);
-        System.out.println("Jenis Pemeriksaan: " + jenisPemeriksaan);
-    }
-}

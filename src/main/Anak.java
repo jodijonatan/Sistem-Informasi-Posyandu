@@ -1,6 +1,11 @@
 package main;
 
-public class Anak extends Person {
+public class Anak {
+    public String nama;
+    public Integer umur;
+    public String tanggalLahir;
+    public String kota;
+    public String negara;
     private DataKesehatan dataKesehatan;
 
     public void tampilkanInfoAnak() {
@@ -23,19 +28,3 @@ public class Anak extends Person {
     }
 }
 
-class Balita extends Anak {
-    private double beratBadan;
-    private double tinggiBadan;
-
-    public void setBeratTinggi(double berat, double tinggi) {
-        this.beratBadan = berat;
-        this.tinggiBadan = tinggi;
-    }
-
-    public void tampilkanInfoBalita() {
-        System.out.println("--- Informasi Balita ---");
-        // tampilkanInfoAnak();
-        System.out.println("Berat Badan: " + beratBadan + " kg");
-        System.out.println("Tinggi Badan: " + tinggiBadan + " cm");
-    }
-}

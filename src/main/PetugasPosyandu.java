@@ -1,6 +1,11 @@
 package main;
 
-public class PetugasPosyandu extends Person {
+public class PetugasPosyandu {
+    public String nama;
+    public Integer umur;
+    public String tanggalLahir;
+    public String kota;
+    public String negara;
     public void tampilkanInfoPetugas() {
         System.out.println("Nama Petugas: " + nama);
         System.out.println("Umur Petugas: " + umur);
@@ -23,14 +28,3 @@ public class PetugasPosyandu extends Person {
     }
 }
 
-class Bidan extends PetugasPosyandu {
-    private String nomorLisensi;
-
-    public void setNomorLisensi(String nomor) {
-        this.nomorLisensi = nomor;
-    }
-
-    public void periksaIbuHamil(IbuHamil ibu) {
-        System.out.println(this.nama + ", seorang Bidan dengan nomor lisensi " + this.nomorLisensi + ", melakukan pemeriksaan terhadap Ibu " + ibu.nama + ".");
-    }
-}
