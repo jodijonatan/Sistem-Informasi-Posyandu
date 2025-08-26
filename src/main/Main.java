@@ -13,6 +13,17 @@ public class Main {
 
         System.out.println("\n");
 
+        Balita Nethan = new Balita();
+        Nethan.nama = "Nethan";
+        Nethan.umur = 4;
+        Nethan.tanggalLahir = "01-01-2019";
+        Nethan.kota = "Medan";
+        Nethan.negara = "Indonesia";
+        Nethan.setBeratTinggi(12.5, 85.0);
+        Nethan.tampilkanInfoBalita();
+
+        System.out.println("\n");
+
         DataKesehatan KesehatanDiego = new DataKesehatan();
         KesehatanDiego.beratBadan = 54.2;
         KesehatanDiego.tinggiBadan = 169.0;
