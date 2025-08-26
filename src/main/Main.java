@@ -61,6 +61,17 @@ public class Main {
         
         System.out.println("\n");
 
+        IbuHamil Sari = new IbuHamil();
+        Sari.nama = "Sari";
+        Sari.umur = 28;
+        Sari.tanggalLahir = "01-01-1995";
+        Sari.kota = "Medan";
+        Sari.negara = "Indonesia";
+        Sari.setUsiaKehamilan(5);
+        Sari.tampilkanInfoIbuHamil();
+
+        System.out.println("\n");
+
         Wati.setAnak(Diego);
         Wati.tampilkanInfoAnak();
 
@@ -77,6 +88,18 @@ public class Main {
 
         Andre.catatDataAnak(Diego, KesehatanDiego);
         
+        System.out.println("\n");
+
+        Bidan Diana = new Bidan();
+        Diana.nama = "Diana";
+        Diana.umur = 35;
+        Diana.tanggalLahir = "01-01-1988";
+        Diana.kota = "Medan";
+        Diana.negara = "Indonesia";
+        Diana.setNomorLisensi("BIDAN123");
+        Diana.tampilkanInfoPetugas();
+        Diana.sapaPetugas();
+
         System.out.println("\n");
 
         JadwalPosyandu JadwalDiego = new JadwalPosyandu();

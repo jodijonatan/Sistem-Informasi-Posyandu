@@ -80,3 +80,25 @@ public class DataKesehatan {
         }
     }
 }
+
+class DataAnak extends DataKesehatan {
+    public double lingkarKepala;
+    public double lingkarLenganAtas;
+
+    public void tampilanDataAnak() {
+        tampilanDataKesehatan(); 
+        System.out.println("Lingkar Kepala: " + lingkarKepala);
+        System.out.println("Lingkar Lengan Atas: " + lingkarLenganAtas);
+    }
+}
+
+class DataLansia extends DataKesehatan {
+    public double kadarGulaDarah;
+    public double kadarKolesterol;
+
+    public void tampilanDataLansia() {
+        tampilanDataKesehatan();
+        System.out.println("Kadar Gula Darah: " + kadarGulaDarah);
+        System.out.println("Kadar Kolesterol: " + kadarKolesterol);
+    }
+}
