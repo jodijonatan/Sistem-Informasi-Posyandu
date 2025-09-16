@@ -1,12 +1,16 @@
 package main;
 
 class DataLansia extends DataKesehatan {
-    public double kadarGulaDarah;
     public double kadarKolesterol;
+    public double kadarGulaDarah;
 
-    public void tampilanDataLansia() {
+    public void tampilanKadarKolesterol() {
+        tampilanDataKesehatan();
+        System.out.println("Kadar Kolesterol: " + kadarKolesterol);
+    }
+
+    public void tampilkanKadarGulaDarah () {
         tampilanDataKesehatan();
         System.out.println("Kadar Gula Darah: " + kadarGulaDarah);
-        System.out.println("Kadar Kolesterol: " + kadarKolesterol);
     }
 }
