@@ -102,6 +102,12 @@ public class Main {
 
         System.out.println("\n");
 
+        Admin admin = new Admin();
+        admin.sapaAdmin();
+        admin.sapaClient();
+
+        System.out.println("\n");
+
         JadwalPosyandu JadwalDiego = new JadwalPosyandu();
         JadwalDiego.setInfoJadwal("Operasi Otak", "20 Agustus 2026", "08:00", "10:00", "Rumah Ibu Wati");
         JadwalDiego.tampilkanJadwal();
