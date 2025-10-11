@@ -1,4 +1,4 @@
-package main;
+package utama;
 
 public class Anak {
     public String nama;

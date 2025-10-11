@@ -1,4 +1,4 @@
-package main;
+package utama;
 
 public class DataKesehatan {
     public double beratBadan;

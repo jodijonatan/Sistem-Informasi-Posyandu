@@ -1,4 +1,4 @@
-package main;
+package utama;
 
 class DataLansia extends DataKesehatan {
     public double kadarKolesterol;

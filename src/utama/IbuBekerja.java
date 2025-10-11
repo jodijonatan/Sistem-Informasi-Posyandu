@@ -1,4 +1,4 @@
-package main;
+package utama;
 
 public class IbuBekerja extends Ibu {
   public String pekerjaan;

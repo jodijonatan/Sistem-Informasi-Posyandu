@@ -1,4 +1,4 @@
-package main;
+package utama;
 
 class JadwalVaksinasi extends JadwalPosyandu {
     public String jenisVaksin;

@@ -1,4 +1,4 @@
-package main;
+package utama;
 
 class JadwalPemeriksaanIbuHamil extends JadwalPosyandu {
     public String namaBidan;

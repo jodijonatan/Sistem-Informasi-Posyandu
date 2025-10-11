@@ -1,4 +1,4 @@
-package main;
+package utama;
 import java.util.Scanner;
 
 public class Admin extends PetugasPosyandu {

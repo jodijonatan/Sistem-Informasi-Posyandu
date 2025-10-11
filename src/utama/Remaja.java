@@ -1,4 +1,4 @@
-package main;
+package utama;
 
 public class Remaja extends Anak {
     public void sapaRemaja () {

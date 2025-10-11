@@ -1,4 +1,4 @@
-package main;
+package utama;
 
 class Balita extends Anak {
     private double beratBadan;
