@@ -17,4 +17,10 @@ public class Admin extends PetugasPosyandu {
       client.nama = "Diego";
       System.out.println("Hai, senang bertemu dengan mu " + client.nama + "!");
     }
+
+    public static void main(String[] args) {
+      Admin admin = new Admin();
+      admin.sapaAdmin();
+      admin.sapaClient();
+    }
 }

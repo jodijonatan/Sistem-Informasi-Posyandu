@@ -15,4 +15,15 @@ class Balita extends Anak {
         System.out.println("Berat Badan: " + beratBadan + " kg");
         System.out.println("Tinggi Badan: " + tinggiBadan + " cm");
     }
+
+    public static void main(String[] args) {
+        Balita Nethan = new Balita();
+        Nethan.nama = "Nethan";
+        Nethan.umur = 4;
+        Nethan.tanggalLahir = "01-01-2019";
+        Nethan.kota = "Medan";
+        Nethan.negara = "Indonesia";
+        Nethan.setBeratTinggi(12.5, 85.0);
+        Nethan.tampilkanInfoBalita();
+    }
 }

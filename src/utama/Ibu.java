@@ -30,4 +30,18 @@ public class Ibu {
             System.out.println("Belum ada anak yang terdaftar.");
         }
     }
+
+    public static void main(String[] args) {
+        Ibu Wati = new Ibu();
+        Wati.nama = "Wati";
+        Wati.umur = 40;
+        Wati.tanggalLahir = "01-01-1983";
+        Wati.kota = "Medan";
+        Wati.negara = "Indonesia";
+        Wati.tampilkanInfoIbu();
+        Wati.sapaIbu();
+
+        Wati.setAnak(Diego);
+        Wati.tampilkanInfoAnak();
+    }
 }

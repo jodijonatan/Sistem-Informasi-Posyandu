@@ -79,4 +79,23 @@ public class DataKesehatan {
             System.out.println("Kondisi: Sakit");
         }
     }
+
+    public static void main(String[] args) {
+        DataKesehatan KesehatanDiego = new DataKesehatan();
+        KesehatanDiego.beratBadan = 54.2;
+        KesehatanDiego.tinggiBadan = 169.0;
+        KesehatanDiego.tekananDarahSistolik = 6;
+        KesehatanDiego.tekananDarahDiastolik = 9;
+        KesehatanDiego.detakJantung = 999;
+        KesehatanDiego.suhuTubuh = 40.9;
+        KesehatanDiego.tampilanDataKesehatan();
+        KesehatanDiego.berat_sehat();
+        KesehatanDiego.tinggi_sehat();
+        KesehatanDiego.tekanan_darah_sehat();
+        KesehatanDiego.detak_jantung_sehat();
+        KesehatanDiego.suhuTubuh_sehat();
+        KesehatanDiego.is_sehat();
+
+        DataKesehatan dataHasil = Diego.getKesehatan();
+    }
 }

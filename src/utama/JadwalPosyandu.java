@@ -35,6 +35,15 @@ public class JadwalPosyandu {
             System.out.println("Jadwal belum terisi.");
         }
     }
+
+    public static void main(String[] args) {
+        JadwalPosyandu JadwalDiego = new JadwalPosyandu();
+        JadwalDiego.setInfoJadwal("Operasi Otak", "20 Agustus 2026", "08:00", "10:00", "Rumah Ibu Wati");
+        JadwalDiego.tampilkanJadwal();
+
+        JadwalDiego.tampilkanWaktuMulai();
+        JadwalDiego.cekStatusJadwal();
+    }
 }
 
 

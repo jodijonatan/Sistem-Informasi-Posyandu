@@ -26,5 +26,20 @@ public class PetugasPosyandu {
         System.out.println(this.nama + " memberikan informasi jadwal:");
         jadwal.tampilkanJadwal();
     }
+
+    public static void main(String[] args) {
+        PetugasPosyandu Andre = new PetugasPosyandu();
+        Andre.nama = "Andre";
+        Andre.umur = 30;
+        Andre.tanggalLahir = "01-01-1993";
+        Andre.kota = "Medan";
+        Andre.negara = "Indonesia";
+        Andre.tampilkanInfoPetugas();
+        Andre.sapaPetugas();
+
+        Andre.catatDataAnak(Diego, KesehatanDiego);
+
+        Andre.berikanInformasiJadwal(JadwalDiego);
+    }
 }
 
